@@ -1,0 +1,288 @@
+/*
+* @Author: jiangchongyang
+* @Date:   2017-04-06 09:47:15
+* @Last Modified by:   jiangchongyang
+* @Last Modified time: 2017-04-06 14:04:24
+*/
+
+body {
+    background-color: #f3f3f3;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+section {
+    overflow: hidden;
+}
+
+.lf {
+    width: 200px;
+    float: left;
+}
+
+.lf ul li {
+    list-style-type: none;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #f4c2c1;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.lf ul li:hover {
+    color: #f4c2c1;
+    background-color: #fff;
+}
+
+.rt {
+    float: left;
+}
+
+.rt .contarent {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ddd;
+    top: 120px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.form {
+    width: 300px;
+    height: 300px;
+}
+
+.form img {
+    width: 300px;
+    height: 300px;
+    /* -webkit-transform-origin:0 300px; */
+}
+
+
+/*淡入*/
+
+.contarent .form img.fk-danru {
+    animation: fk-danru 1s;
+    -webkit-animation: fk-danru 1s;
+}
+
+@-webkit-keyframes fk-danru {
+    0% {
+        opacity: 0;
+    }
+    ,
+    50% {
+        opacity: 0.5;
+    }
+    ,
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*飞入*/
+
+.contarent .form img.fk-feiru {
+    animation: fk-feiru 1s;
+    -webkit-animation: fk-feiru 1s;
+}
+
+@-webkit-keyframes fk-feiru {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    ,
+    50% {
+        opacity: 0.5;
+        transform: translateX(150px);
+    }
+    ,
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/*放大*/
+
+.contarent .form img.fk-fangda {
+    animation: fk-fangda 1s;
+    -webkit-animation: fk-fangda 1s;
+}
+
+@-webkit-keyframes fk-fangda {
+    0%{
+    	 -webkit-transform: scale(0.0)
+    }
+    100%{
+    	 -webkit-transform: scale(1.0)
+    }
+}
+
+
+/*跳入*/
+
+.contarent .form img.fk-tiaoru {
+    animation: fk-tiaoru 0.75s;
+    -webkit-animation: fk-tiaoru 0.75s;
+}
+
+@-webkit-keyframes fk-tiaoru {
+    0% {
+        transform: translateX(1000px);
+    }
+    ,
+    20% {
+        transform: translateX(800px);
+    }
+    ,
+    40% {
+        transform: translateX(600px);
+    }
+    ,
+    ,
+    60% {
+        transform: translateX(400px);
+    }
+    ,
+    ,
+    80% {
+        transform: translateX(200px);
+    }
+    ,
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/*闪现*/
+
+.contarent .form img.fk-shanxian {
+    animation: fk-shanxian 2s;
+    -webkit-animation: fk-shanxian 2s;
+}
+
+@-webkit-keyframes fk-shanxian {
+    0%{
+    	opacity:1;
+    }
+    20%{
+    	opacity:0;
+    }
+    40%{
+    	opacity:1;
+    }
+    60%{
+    	opacity:0;
+    }
+    80%{
+    	opacity:1;
+    }
+    100%{
+    	opacity:0;
+    }
+}
+/*滚入*/
+.contarent .form img.fk-gunru {
+    animation: fk-gunru 2s;
+    -webkit-animation: fk-gunru 2s;
+}
+@keyframes fk-gunru {
+    0% {
+    	opacity:0.1;
+        transform: rotate(-90deg);
+    }
+    80% {
+    	opacity:0.8;
+        transform: rotate(-45deg);
+    }
+    100% {
+    	opacity:1;
+        transform: rotate(0deg);
+    }
+}
+
+/*翻转*/
+.contarent .form img.fk-fanzhuan {
+    animation: fk-fanzhuan 2s;
+    -webkit-animation: fk-fanzhuan 2s;
+}
+@keyframes fk-fanzhuan {
+    0% {
+    	-webkit-transform: rotateY(-90deg);
+    }
+    20% {
+    	-webkit-transform: rotateY(0deg);
+    }
+    40% {
+   		 -webkit-transform: rotateY(90deg);
+    }
+    60% {
+   		 -webkit-transform: rotateY(0deg);
+    }
+    80% {
+   		 -webkit-transform: rotateY(-90deg);
+    }
+    100% {
+   		 -webkit-transform: rotateY(0deg);
+    }
+}
+
+/*弹性放大*/
+
+.contarent .form img.fk-tfangda {
+    animation: fk-tfangda 1s;
+    -webkit-animation: fk-tfangda 1s;
+}
+
+@-webkit-keyframes fk-tfangda {
+    0%{
+    	-webkit-transform: scale(1.0)
+    }
+    25%{
+		-webkit-transform: scale(1.2)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+    75% {
+        -webkit-transform: scale(1.2)
+    }
+    100% {
+        -webkit-transform: scale(1.0)
+    }
+}
+/*弹性缩小*/
+
+.contarent .form img.fk-suoxiao {
+    animation: fk-suoxiao 1s;
+    -webkit-animation: fk-suoxiao 1s;
+}
+
+@-webkit-keyframes fk-suoxiao {
+    0%{
+    	-webkit-transform: scale(1.0)
+    }
+    25%{
+		-webkit-transform: scale(0.8)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+    75% {
+        -webkit-transform: scale(0.8)
+    }
+    100% {
+        -webkit-transform: scale(1.0)
+    }
+}
